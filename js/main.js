@@ -6,6 +6,15 @@ $(window).on('load', function() { // makes sure the whole site is loaded
 
 $(document).ready(function(){
   
+   // Reload top//
+
+  $(document).ready(function(){
+    $('html,body').scrollTop(0);
+  });
+  
+  
+  //Nabvar click active//
+  
    $(".nav_link").click(function() {
       // remove classes from all
       $(".nav_link").removeClass("active");
