@@ -137,13 +137,7 @@ $(document).ready(function(){
     origin: 'left',
     distance: '-50px'
   });
-  
-  sr.reveal('.proyects .subtitle', {
-    duration: 4000,
-    origin: 'left',
-    distance: '-50px'
-  });
-  
+    
   sr.reveal('.proyects .descripcion', {
     duration: 4000,
     origin: 'top',
