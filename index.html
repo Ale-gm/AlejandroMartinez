@@ -4,23 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- DESCRPTION -->
-    <meta name="description" content="Desarrollo de sitios webs a medida utilizando las mejores herramientas.">
-    <!-- KEYWORDS -->
-    <meta name="keywords"  content="FRONTEND, CSS, JS, DESARROLLADOR, HTML, DESARROLLO WEB, PAGINAS WEB, ALEJANDRO MARTINEZ">
     <!-- ICONSSCOUT -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css"/>
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <!--- ScrollReveal ---->
+    <!--- ScrollReveal --->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Alejandro Martinez</title>
+  <title>Alejandro Martinez</title>
   </head>
-    <!-- HEADER -->
 <body>
+ <div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+  
   <div class="scroll-up">
     <i class="fas fa-angle-up"></i>
   </div>
@@ -30,7 +29,7 @@
       <a href="#"><span class="typing"></span></a>
     </div>
     <ul class="menu">
-      <li><a href="#home" class="nav_link activo"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#home" class="nav_link active"><i class="fas fa-home"></i> Home</a></li>
       <li><a href="#about" class="nav_link"><i class="fas fa-user"></i> Sobre mí</a></li>
       <li><a href="#skills" class="nav_link"><i class="fas fa-code"></i> Skills</a></li>
       <li><a href="#proyects" class="nav_link"><i class="fas fa-briefcase"></i> Proyectos</a></li>
@@ -90,10 +89,11 @@
     <span class="subtitle">Quien soy</span>
     <div class="about-content">
       <div class="column-left">
-        <img src="img/23032021-IMG_0295-Editar.jpg"/></div>
+        <img src="https://www.mendozapost.com/files/image/7/7142/54b6f4c45797b_360_480!.jpg?s=bf284228883a747d8dc7886e606a181f&d=1566545783"/></div>
       <div class="column-right">
         <h2>Hola, soy Alejandro. Un placer conocerte.</h2>
-        <p>Desde que comencé mi viaje como diseñador independiente hace casi 10 años, he trabajado a distancia para agencias, he trabajado como consultor para empresas emergentes y he colaborado con personas talentosas para crear productos digitales para uso comercial y de consumo. Estoy tranquilamente confiado, naturalmente curioso y trabajando constantemente para mejorar mis habilidades, un problema de diseño a la vez.</p>
+        <p>Me considero una persona con una gran capacidad de aprendizaje, resolutiva, de negociación y trabajo en equipo. Me formó de manera autodidacta y estoy en costante aprendizaje para poder tener la mayor parte de herramientas para resolver todos los proyectos y trabajos que se me asignen a lo largo de mi carrera profesional como desarrollador.
+</p>
         <a class="btncv" href="https://drive.google.com/file/d/1ki7hPJ7qs84Zwm2NHL97QyXV6VS8qtgX/view?usp=sharing" target="_blank"></i> Descargar CV</a>
            
       </div>
@@ -107,7 +107,7 @@
    <div class="max-width">
     <h2 class="title">Skills</h2>
       <span class="subtitle">Mis habilidades</span>
-     <span class="descripcion">Soy una persona autodidacta. El autodidactismo es un camino hacía la autonomía del aprendizaje y aporta muchas aptitudes a las personas que lo llevan a cabo,  como la capacidad de esfuerzo y superación.</span>
+     <span class="descripcion">Me gusta codificar proyectos desde cero y disfruto dandole vida a mis ideas en el navegador.</span>
     <div class="skills-content">
 <!------------- Skill 1 ---------------->      
       <div class="skill-cont skill-open">
@@ -273,6 +273,7 @@
     <div class="max-width">
      <h2 class="title">Proyectos</h2>
       <span class="subtitle">Mis Proyectos</span>
+      <span class="descripcion">Aqui pondria mis proyectos si tuviera uno.</span>
      <div class="proyects-content">
         <div class="card">
           <div class="box">            
@@ -297,6 +298,16 @@
   </section>
         
  <!------------- Contacto ------------------>
+ <!--<div class="modal-form">
+  <div class="mensaje-modal">
+    <h3>Errores encontrados</h3>
+    <p>Escriba un nomnbre</p>
+    <p>Escriba un Correo electronico</p>
+    <p>Escriba un asunto</p>
+    <p>Escriba un mensaje</p>
+    <span id="btnclose">Cerrar</span>
+  </div>--> 
+</div>
   <section class="contacto" id="contacto">
     <div class="max-width">
      <h2 class="title">Contacto</h2>
@@ -306,8 +317,8 @@
          <div class="contacto-information">
               <i class="fab fa-whatsapp contact-icon"></i>
               <div>
-                <h3 class="contact-title">Whatsapp</h3>
-                <span class="contact-subtitle">(+54)9 1138516352</span>
+                <h3 class="contact-title ">Whatsapp</h3>
+                <span class="contact-subtitle wtsp"><a href="https://api.whatsapp.com/send?phone=541138516352" target="_blank">Chatear</a></span> 
               </div>
          </div>
          
@@ -328,7 +339,7 @@
         </div>
       </div>
        <div class="column-right">
-         <div class="text">Enviame un mensaje</div>
+         <div class="text">¿En que puedo ayudarte?</div>
          <form action="enviar.php" method="POST">
            <div class="fields">
              <div class="field name">
@@ -345,7 +356,7 @@
                <textarea cols="30" rows="10" placeholder="Escribe tu mensaje.." id="mensaje" ></textarea>
              </div>
              <div class="button">
-               <button type="submit" value="Enviar" id="btnSedn">Enviar</button>
+               <button type="submit" id="btnSedn">Enviar</button>
              </div>
          </form>
        </div>
