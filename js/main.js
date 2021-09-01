@@ -144,6 +144,12 @@ $(document).ready(function(){
     distance: '-50px'
   });
   
+  sr.reveal('.proyects .descripcion', {
+    duration: 4000,
+    origin: 'top',
+    distance: '-100px'
+  });
+  
   sr.reveal('.proyects .card', {
     duration: 4000,
     origin: 'bottom',
