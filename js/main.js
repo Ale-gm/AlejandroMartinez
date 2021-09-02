@@ -164,13 +164,13 @@ $(document).ready(function(){
   
   sr.reveal('.contacto .column-left', {
     duration: 5000,
-    origin: 'left',
+    origin: 'top',
     distance: '-50px'
   });
   
   sr.reveal('.contacto .column-right', {
     duration: 5000,
-    origin: 'right',
+    origin: 'bottom',
     distance: '-50px'
   });
   
