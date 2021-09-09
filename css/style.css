@@ -105,7 +105,6 @@ z-index: 99999;
 
 body {
   background: var(--dark);
-  overflow: hidden;
 }
 
 /*==================Nav bar style====================== */
