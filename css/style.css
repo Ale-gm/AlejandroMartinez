@@ -391,6 +391,26 @@ body {
   margin-bottom: 50px;
 }
 
+.esconder,
+.esconder2,
+.esconder3{
+  visibility: hidden;
+  position: relative;
+  left: 30px;
+  bottom: 20px;
+  color: var(--blanco);
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.linkedin:hover > .esconder,
+.github:hover > .esconder2,
+.codepen:hover > .esconder3{  
+  visibility: visible;
+  left: 52px;
+  opacity: 1;
+}
+
 .home .home-content .text-1 {
   color: var(--blanco);
   opacity: 0.3;
