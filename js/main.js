@@ -172,7 +172,35 @@ $(document).ready(function(){
     distance: '-50px'
   });
   
-  
+    //SCROLL SECTION//
+
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > $("#home").offset().top - 50) {
+    $(".casa").addClass("active");
+  } else{
+    $(".casa").removeClass("active");
+  } if ($(window).scrollTop() > $("#about").offset().top - 50) {
+    $(".casa").removeClass("active");
+    $(".sobremi").addClass("active");
+  } else{
+    $(".sobremi").removeClass("active");
+  } if ($(window).scrollTop() > $("#skills").offset().top - 50) {
+    $(".sobremi").removeClass("active");
+    $(".hab").addClass("active");
+  } else{
+    $(".hab").removeClass("active");
+  } if ($(window).scrollTop() > $("#proyects").offset().top - 50) {
+    $(".hab").removeClass("active");
+    $(".proyectos").addClass("active");
+  } else{
+    $(".proyectos").removeClass("active");
+  } if ($(window).scrollTop() > $("#contacto").offset().top - 50) {
+    $(".proyectos").removeClass("active");
+    $(".contact").addClass("active");
+  } else{
+    $(".contact").removeClass("active");
+  }
+});
   
   
   $(window).scroll(function(){
@@ -182,8 +210,7 @@ $(document).ready(function(){
           $('.navbar').addClass("sticky");
       }else{
           $('.navbar').removeClass("sticky");
-      }
-    if(this.scrollY > 300){
+      } if (this.scrollY > 300){
           $('.scroll-up').addClass("show");
     }else{
           $('.scroll-up').removeClass("show");
